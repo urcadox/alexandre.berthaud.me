@@ -63,3 +63,73 @@ h1 {
   margin-left: 3px;
   font-size: 0.9em;
 }
+
+.context .meta.link a {
+  display: block;
+}
+
+@media screen and (min-aspect-ratio: 16/10) {
+  body {
+    max-width: none;
+    display: -webkit-box;
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: fixed;
+    height: 100%;
+  }
+
+  .main {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: auto;
+  }
+
+  .main .rect-img {
+    height: 100%;
+    width: auto;
+  }
+
+  .context {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    vertical-align: top;
+    width: 1000%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .context .link {
+    text-align: left;
+    -webkit-transform: translateZ(0px);
+    padding-left: 8px;
+    -webkit-transition: background ease-in-out 0.1s;
+    font-size: 3rem;
+  }
+
+  .context .link:hover {
+    background: #DFDFDF;
+    color: #333;
+  }
+  .context .link:hover a {
+    color: #222;
+  }
+  .context .link:hover a .path {
+    color: #777;
+  }
+  .context .link .normal {
+    position: absolute;
+  }
+  .context .link .hover {
+    visibility: hidden;
+    margin-top: 0;
+  }
+  .context .link:hover .normal {
+    display: none;
+  }
+  .context .link:hover .hover {
+    visibility: visible;
+  }
+}
