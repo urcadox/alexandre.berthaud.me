@@ -4,6 +4,7 @@ body {
   background: #1A1A1A;
   color: #CCC;
   font-family: 'Source Sans Pro', sans-serif;
+  max-width: 800px;
 }
 
 .main {
