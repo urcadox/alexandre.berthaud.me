@@ -118,7 +118,7 @@ h1 {
     -webkit-transform: translateZ(0px);
     padding-left: 8px;
     -webkit-transition: background ease-in-out 0.1s;
-    font-size: 3rem;
+    font-size: 1.3rem;
   }
 
   .context .link:hover {
@@ -143,5 +143,47 @@ h1 {
   }
   .context .link:hover .hover {
     visibility: visible;
+  }
+}
+
+@media screen and (min-aspect-ratio: 16/10) and (min-width: 1600px) {
+  .context .link {
+    font-size: 1.95rem;
+  }
+}
+@media screen and (min-aspect-ratio: 16/10) and (min-width: 1900px) {
+  .context .link {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 1600px) {
+  .context .link {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 1900px) {
+  .context .link {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-height: 450px) and (min-width: 450px) {
+  .main {
+    background-image: url(../img/photo-600.jpg);
+  }
+}
+@media screen and (min-height: 650px) and (min-width: 650px) {
+  .main {
+    background-image: url(../img/photo-800.jpg);
+  }
+}
+@media screen and (min-height: 850px) and (min-width: 850px) {
+  .main {
+    background-image: url(../img/photo-1000.jpg);
+  }
+}
+@media screen and (min-height: 1050px) and (min-width: 1050px) {
+  .main {
+    background-image: url(../img/photo-full.jpg);
   }
 }
