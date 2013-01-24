@@ -80,7 +80,7 @@ h1 {
 }
 
 @media screen and (min-aspect-ratio: 16/10) {
-  body {
+  body.wide-layout {
     max-width: none;
     display: -webkit-box;
     white-space: nowrap;
@@ -89,7 +89,7 @@ h1 {
     height: 100%;
   }
 
-  .main {
+  .wide-layout .main {
     display: inline-block;
     vertical-align: top;
     height: 100%;
@@ -97,12 +97,12 @@ h1 {
     white-space: normal;
   }
 
-  .main .rect-img {
+  .wide-layout .main .rect-img {
     height: 100%;
     width: auto;
   }
 
-  .context {
+  .wide-layout .context {
     display: inline-block;
     -webkit-box-flex: 1;
     vertical-align: top;
@@ -114,7 +114,7 @@ h1 {
     margin-left: -3px;
   }
 
-  .context .link {
+  .wide-layout .context .link {
     text-align: left;
     -webkit-transform: translateZ(0px);
     padding-left: 8px;
@@ -122,48 +122,48 @@ h1 {
     font-size: 1.3rem;
   }
 
-  .context .link:hover {
+  .wide-layout:not(.touch) .context .link:hover {
     background: #DFDFDF;
     color: #333;
   }
-  .context .link:hover a {
+  .wide-layout:not(.touch) .context .link:hover a {
     color: #222;
   }
-  .context .link:hover a .path {
+  .wide-layout:not(.touch) .context .link:hover a .path {
     color: #777;
   }
-  .context .link .normal {
+  .wide-layout:not(.touch) .context .link .normal {
     position: absolute;
   }
-  .context .link .hover {
+  .wide-layout:not(.touch) .context .link .hover {
     visibility: hidden;
     margin-top: 0;
   }
-  .context .link:hover .normal {
+  .wide-layout:not(.touch) .context .link:hover .normal {
     display: none;
   }
-  .context .link:hover .hover {
+  .wide-layout:not(.touch) .context .link:hover .hover {
     visibility: visible;
   }
 }
 
 @media screen and (min-aspect-ratio: 16/10) and (min-width: 1600px) {
-  .context .link {
+  .wide-layout .context .link {
     font-size: 1.95rem;
-  }
+  .wide-layout }
 }
 @media screen and (min-aspect-ratio: 16/10) and (min-width: 1900px) {
-  .context .link {
+  .wide-layout .context .link {
     font-size: 2.3rem;
   }
 }
 @media screen and (min-aspect-ratio: 16/9) and (min-width: 1600px) {
-  .context .link {
+  .wide-layout .context .link {
     font-size: 2.3rem;
   }
 }
 @media screen and (min-aspect-ratio: 16/9) and (min-width: 1900px) {
-  .context .link {
+  .wide-layout .context .link {
     font-size: 3rem;
   }
 }

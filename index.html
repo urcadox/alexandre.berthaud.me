@@ -110,4 +110,13 @@
     })();
 
   </script>
+  <script type="text/javascript" src="/js/modernizr.min.js"></script>
+  <script type="text/javascript">
+    if(Modernizr.touch) {
+      document.getElementsByTagName('body')[0].classList.add('touch');
+    }
+    if(navigator.userAgent.indexOf("Opera") == -1) {
+      document.getElementsByTagName('body')[0].classList.add('wide-layout')
+    }
+  </script>
 </body>
