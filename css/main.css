@@ -82,7 +82,6 @@ h1 {
 @media screen and (min-aspect-ratio: 16/10) {
   body.wide-layout {
     max-width: none;
-    display: -webkit-box;
     white-space: nowrap;
     overflow-x: hidden;
     position: fixed;
@@ -104,7 +103,6 @@ h1 {
 
   .wide-layout .context {
     display: inline-block;
-    -webkit-box-flex: 1;
     vertical-align: top;
     width: 1000%;
     height: 100%;
