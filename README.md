@@ -1,5 +1,7 @@
 # My personal page
 
+Available here: http://alexandre.berthaud.me
+
 At first, this was supposed to be a no-JS page.
 
 Sadly, Opera has a lot of trouble rendering the wide layout:
