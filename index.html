@@ -23,14 +23,14 @@
   <meta property="og:description" content="Alexandre Berthaud's page - Software engineer from Nantes; Scala (Playframework), JS developper; HTML5 lover; Arch Linux user" />
   <meta property="og:locale" content="en_US" />
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Person">
   <div class="main" role="main">
     <img class="rect-img" src="/img/transparent-rect.png" />
     <div class="content">
       <p class="toptitle">Hey there! My name is</p>
-      <h1>Alexandre Berthaud</h1>
-      <div class="description">
-        <p>I work as a software engineer at <a href="http://www.eklaweb.com">eklaweb</a> which is part of the <a href="http://www.companycamp.us">Company Campus</a> in Nantes, France.</p>
+      <h1 itemprop="name">Alexandre Berthaud</h1>
+      <div itemprop="description" class="description">
+        <p>I work as a <span itemprop="jobTitle">software engineer</span> at <a href="http://www.eklaweb.com">eklaweb</a> which is part of the <a href="http://www.companycamp.us">Company Campus</a> in Nantes, <span itemprop="nationality">France</span>.</p>
         <p>I'm a Scala (Playframework), JS developper; HTML5 lover, Arch Linux user.</p>
       </div>
     </div>
@@ -41,7 +41,7 @@
         Contact me
       </div>
       <div class="hover">
-        <a href="mailto:alexandre@berthaud.me"><span class="website">alexandre@berthaud.me</span></a>
+        <a href="mailto:alexandre@berthaud.me"><span class="website" itemprop="email">alexandre@berthaud.me</span></a>
       </div>
     </div>
     <div class="link disabled">
